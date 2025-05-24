@@ -9,7 +9,11 @@ if ! command -v pip &> /dev/null; then
 fi
 
 echo "[+][Install.sh] 📥 Installing dependencies..."
-pip install --break-system-packages -r requirements.txt
+if pip install --help | grep -q -- '--break-system-packages'; then
+  pip install --break-system-packages -r requirements.txt
+else
+  pip install -r requirements.txt
+fi
 
 echo "[+][Install.sh] 🚀 Running main script..."
 sudo python3 main.py
