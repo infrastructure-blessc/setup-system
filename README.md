@@ -15,7 +15,7 @@ This repository contains scripts for configuring a server. The scripts automate 
 To install the package, clone the repository using git:
 
 ```bash
-git clone https://github.com/infrastructure-blessc/setup-k0s-control-plane setup
+git clone https://github.com/infrastructure-blessc/system-setup
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ git clone https://github.com/infrastructure-blessc/setup-k0s-control-plane setup
 Navigate to the cloned directory and run the installation script with sudo privileges:
 
 ```bash
-cd setup
+cd system-setup
 sudo bash ./install.sh
 ```
 
