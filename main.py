@@ -2,7 +2,6 @@ import yaml
 import time
 from src.utils.logger import log_step
 from src.system import users, hostname, ssh
-from src.k0s import install
 
 with open("config.yaml") as f:
     config = yaml.safe_load(f)
