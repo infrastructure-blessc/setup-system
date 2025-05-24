@@ -1,0 +1,9 @@
+system:
+  users:
+    - name: user1
+      sshkey: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA7..."
+    - name: user2
+      sshkey: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC..."
+  hostname: testhostname
+  ssh:
+    port: 2202
